@@ -15,8 +15,8 @@
         <td>{{tarea.tarea}}</td>
         <td>{{tarea.finalizado}}</td>
         <td>
-            <button class="btn btn-danger">Eliminar</button>
-            <button class="btn btn-info" [routerLink]="['/edit',tarea.id]" style="margin-left: 10px;">Editar</button>
+            <button class="btn btn-danger" (click)="eliminar(tarea.id)">Eliminar</button>
+            <button class="btn btn-info" [routerLink]="['/edit/',tarea.id]" style="margin-left: 10px;">Editar</button>
         </td>
       </tr>
     </tbody>

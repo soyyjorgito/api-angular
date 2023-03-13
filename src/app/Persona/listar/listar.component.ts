@@ -19,4 +19,14 @@ export class ListarComponent implements OnInit{
     {
       this.tareaService.getTareas().subscribe(res=>{this.lista=res})
     }
+
+    eliminar(id:string)
+    {
+      this.tareaService.deleteTarea(id).subscribe(
+        res=>
+        {
+          this.ngOnInit();
+        }
+      )
+    }
 }
