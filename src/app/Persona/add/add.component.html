@@ -1,1 +1,15 @@
-<p>add works!</p>
+<div class="container">
+    <form action="">
+        <label for="tarea">
+            Tarea
+        </label>
+        <input type="text" id="tarea" name="tarea" [(ngModel)] = "tareaNueva.tarea" style="margin-left:10px;">
+        <label for="estado" style="margin-left:10px;">
+            Estado
+        </label>
+        <input type="checkbox" name="estado" id="estado" [(ngModel)] = "tareaNueva.finalizado" style="margin-left:10px;">
+    </form>
+    <button class="btn btn-primary" (click)="agregarTarea()">
+        Guardar
+    </button>
+</div>
