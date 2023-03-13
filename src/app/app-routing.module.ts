@@ -5,6 +5,7 @@ import { EditComponent } from './Persona/edit/edit.component';
 import { ListarComponent } from './Persona/listar/listar.component';
 
 const routes: Routes = [
+  {path:'',redirectTo:'listar',pathMatch:'full'},
   {path:'listar', component: ListarComponent},
   {path: 'add', component: AddComponent},
   {path: 'edit', component: EditComponent}

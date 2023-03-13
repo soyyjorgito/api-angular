@@ -1,1 +1,16 @@
-<p>listar works!</p>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Tarea</th>
+        <th scope="col">Estado Finalizado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tarea of lista">
+        <td>{{tarea.id}}</td>
+        <td>{{tarea.tarea}}</td>
+        <td>{{tarea.finalizado}}</td>
+      </tr>
+    </tbody>
+  </table>
